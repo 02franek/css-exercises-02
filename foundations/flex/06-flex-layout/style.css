@@ -50,8 +50,6 @@ a {
 .header, .footer {
   display: flex;
   justify-content: space-between;
-  font-weight: 300;
-  font-size: 14px;
 }
 
 .left-links, .right-links {
