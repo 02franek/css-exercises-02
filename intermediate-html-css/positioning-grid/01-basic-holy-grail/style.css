@@ -9,6 +9,9 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template: 96px 96px 1fr 96px / 320px 1fr;
+  gap: 16px;
 }
 
 .container div {
@@ -22,10 +25,12 @@ html {
 
 .header {
   background-color: #006157;
+  grid-area: 1 / 1 / 2 / 3;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-area: 2 / 1 / span 2 / 2;
 }
 
 .nav {
@@ -38,6 +43,7 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-area: -1 / 1 / -2 / span 2;
 }
 
 .article p {
